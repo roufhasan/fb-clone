@@ -1,0 +1,229 @@
+/* 
+============
+Fonts 
+============
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* 
+============
+Variables
+============
+*/
+:root {
+  --clr-bg: #f0f2f5;
+  --clr-white: #fff;
+  --clr-skyblue: #1877f2;
+  --clr-green: #42b72a;
+  --clr-border: #dddfe2;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  --primary-font: "Roboto", sans-serif;
+}
+
+/* 
+============
+General Style 
+============
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--primary-font);
+  width: 100vw;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92vh;
+  background: var(--clr-bg);
+}
+
+.fb-text {
+  position: relative;
+  margin-right: 7%;
+  margin-bottom: 7%;
+}
+
+img {
+  height: 6.625rem;
+  position: absolute;
+  right: 46%;
+  bottom: 90%;
+}
+.text {
+  font-size: 1.75rem;
+  max-width: 31.25rem;
+  line-height: 2rem;
+  font-weight: normal;
+}
+.form {
+  width: 27%;
+  text-align: center;
+  margin-top: -8%;
+}
+form {
+  background: #fff;
+  box-shadow: var(--box-shadow);
+  padding-bottom: 5%;
+  border-radius: 6px;
+  line-height: 1.4;
+  max-width: 28.7rem;
+}
+input {
+  background: var(--clr-white);
+  padding: 0.75rem 1rem;
+  margin-top: 1.07rem;
+  border-radius: 6px;
+  border: 1px solid var(--clr-border);
+  outline: none;
+  width: 91%;
+}
+input[type="text"] {
+  font-size: 1.07rem;
+  font-weight: 500;
+}
+input::placeholder {
+  font-size: 1.07rem;
+  font-weight: 300;
+  color: #98999c;
+}
+.password {
+  margin-top: 0.75rem;
+}
+.btn {
+  padding: 0rem 1rem;
+  width: 91%;
+  font-size: 1.2rem;
+  background: var(--clr-skyblue);
+  outline: none;
+  border: none;
+  margin-top: 1.07rem;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 6px;
+  line-height: 3rem;
+  transition: 0.3s;
+}
+.log-in:hover {
+  background: #1b71e0;
+}
+button.new-acc:hover {
+  background: #3eaa28;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 0.875rem;
+  margin-top: 1.07rem;
+  color: #111;
+}
+a:hover {
+  text-decoration: underline;
+}
+.frgt-psd {
+  color: var(--clr-skyblue);
+  display: inline-block;
+  margin-bottom: 1.25rem;
+}
+
+.horizontal-line {
+  width: 91%;
+  background: var(--clr-border);
+  height: 1px;
+  margin: 0 auto;
+}
+
+.btn.new-acc {
+  background: var(--clr-green);
+  width: 50%;
+  font-size: 0.94rem;
+  margin: 25px auto 5px auto;
+  display: block;
+  text-transform: capitalize;
+  font-weight: 700;
+  min-width: 11.625rem;
+}
+.page {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 0.94rem;
+}
+span {
+  font-weight: 300;
+  font-size: 0.94rem;
+}
+.about {
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+  color: #8a8d91;
+}
+.about a {
+  color: #8a8d91;
+  display: inline-block;
+  font-size: 12px;
+  padding: 0 2px;
+  margin: 0;
+}
+.about .lang span {
+  font-size: 12px;
+  color: #8a8d91;
+}
+.lang button {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0px 10px;
+  border: 1px solid gray;
+  outline: none;
+}
+.divider {
+  height: 1px;
+  width: 80%;
+  background: #8a8d91;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.market p {
+  font-size: 13px;
+  text-align: left;
+}
+
+@media (max-width: 500px) {
+  main {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .fb-text {
+    display: block;
+    text-align: center;
+    margin: 0;
+    margin-top: 2%;
+  }
+  .text {
+    font-size: 20px;
+    max-width: 365px;
+    margin-top: -5%;
+    margin-bottom: 8%;
+  }
+  img {
+    height: 6.625rem;
+    position: relative;
+    right: 0;
+    bottom: 0;
+  }
+  .form {
+    min-width: 280px;
+    margin-top: 0;
+  }
+  input::placeholder {
+    font-size: 0.94rem;
+  }
+}
